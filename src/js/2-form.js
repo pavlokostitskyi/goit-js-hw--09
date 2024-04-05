@@ -31,8 +31,7 @@ form.addEventListener('submit', function(event) {
   localStorage.removeItem(storageKey);
 
   
-  emailInput.value = '';
-  messageTextarea.value = '';
+
 
   
   const formData = {
