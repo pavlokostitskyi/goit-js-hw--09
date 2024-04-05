@@ -1,2 +1,2 @@
-import"./assets/modulepreload-polyfill-3cfb730f.js";console.log(form);
+import"./assets/styles-8707e5dd.js";const o=document.querySelector(".feedback-form"),a=o.querySelector('input[name="email"]'),t=o.querySelector('textarea[name="message"]'),n="feedback-form-state";function r(){const e={email:a.value,message:t.value};localStorage.setItem(n,JSON.stringify(e))}function m(){const e=localStorage.getItem(n);if(e){const{email:s,message:l}=JSON.parse(e);a.value=s,t.value=l}}o.addEventListener("input",r);window.addEventListener("load",m);o.addEventListener("submit",function(e){e.preventDefault(),localStorage.removeItem(n),a.value="",t.value="";const s={email:a.value,message:t.value};console.log(s)});
 //# sourceMappingURL=commonHelpers2.js.map
