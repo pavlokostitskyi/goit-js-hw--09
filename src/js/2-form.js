@@ -36,11 +36,7 @@ form.addEventListener('submit', function(event) {
     console.log('Поля форми не можуть бути порожніми.');
     return;
   }
-  localStorage.removeItem(storageKey);
 
-   emailInput.value = '';
-  messageTextarea.value = '';
-  
 
 
   
@@ -50,3 +46,11 @@ form.addEventListener('submit', function(event) {
   };
   console.log(formData);
 });
+
+
+
+  localStorage.removeItem(storageKey);
+
+   emailInput.value = '';
+  messageTextarea.value = '';
+  
