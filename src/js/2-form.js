@@ -28,8 +28,18 @@ window.addEventListener('load', fillFormFields);
 form.addEventListener('submit', function(event) {
   event.preventDefault(); 
  
+    const emailValue = emailInput.value.trim();
+  const messageValue = messageTextarea.value.trim();
+  
+
+  if (emailValue === '' || messageValue === '') {
+    console.log('Поля форми не можуть бути порожніми.');
+    return;
+  }
   localStorage.removeItem(storageKey);
 
+   emailInput.value = '';
+  messageTextarea.value = '';
   
 
 
