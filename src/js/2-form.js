@@ -45,7 +45,7 @@ form.addEventListener('submit', function(event) {
     message: messageTextarea.value
   };
   console.log(formData);
-});
+
 
 
 
@@ -53,4 +53,4 @@ form.addEventListener('submit', function(event) {
 
    emailInput.value = '';
   messageTextarea.value = '';
-  
+  });
